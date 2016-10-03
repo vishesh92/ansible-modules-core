@@ -39,7 +39,7 @@ options:
         required: false
     namespace:
         description:
-          - Name of the appropriate namespace ('AWS/EC2', 'System/Linux', etc.), which determines the category it will appear under in cloudwatch
+          - Name of the appropriate namespace ('AWS/EC2', 'System/Linux', etc.), which determines the category it will appear under in cloudwatch. See http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-namespaces.html
         required: false
     statistic:
         description:
@@ -79,11 +79,11 @@ options:
         required: false
     alarm_actions:
         description:
-          - A list of the names action(s) taken when the alarm is in the 'alarm' status
+          - A list of ARN(s) of action taken when the alarm is in the 'alarm' status.
         required: false
     insufficient_data_actions:
         description:
-          - A list of the names of action(s) to take when the alarm is in the 'insufficient_data' status
+          - A list of ARN(s) of actions to take when the alarm is in the 'insufficient_data' status
         required: false
     ok_actions:
         description:
